@@ -1,0 +1,38 @@
+#ifndef TV_REMOTE_DATABASE_H
+#define TV_REMOTE_DATABASE_H
+
+#include <map>
+#include <string>
+
+// IR codes for TV remote buttons
+const std::map<std::string, unsigned long> IR_CODES_MAP = {
+  {"POWER", 0xE0E040BF},
+  {"SOURCE", 0xE0E0807F},
+  {"NUMBER_1", 0xE0E020DF},
+  {"NUMBER_2", 0xE0E0A05F},
+  {"NUMBER_3", 0xE0E0609F},
+  {"NUMBER_4", 0xE0E010EF},
+  {"NUMBER_5", 0xE0E0906F},
+  {"NUMBER_6", 0xE0E050AF},
+  {"NUMBER_7", 0xE0E030CF},
+  {"NUMBER_8", 0xE0E0B04F},
+  {"NUMBER_9", 0xE0E0708F},
+  {"NUMBER_0", 0xE0E08877},
+  {"VOLUME_UP", 0xE0E0E01F},
+  {"VOLUME_DOWN", 0xE0E0D02F},
+  {"CHANNEL_UP", 0xE0E048B7},
+  {"CHANNEL_DOWN", 0xE0E008F7},
+  {"MUTE", 0xE0E0F00F},
+  {"INFO", 0xE0E0F807},
+  {"MENU", 0xE0E058A7},
+  {"GUIDE", 0xE0E0F20D},
+  {"RETURN", 0xE0E01AE5},
+  {"EXIT", 0xE0E0B44B},
+  {"UP", 0xE0E006F9},
+  {"DOWN", 0xE0E08679},
+  {"LEFT", 0xE0E0A659},
+  {"RIGHT", 0xE0E046B9},
+  {"ENTER", 0xE0E016E9}
+};
+
+#endif  // TV_REMOTE_DATABASE_H
